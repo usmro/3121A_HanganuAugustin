@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimulatorTrafic" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SimulatorTrafic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SimulatorTrafic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-std=c++17" />
+			<Add option="-D_HAS_STD_BYTE=0" />
+			<Add option="-DWIN32_LEAN_AND_MEAN" />
+			<Add option="-D_WIN32_WINNT=0x0601" />
+			<Add directory="../SFML-3.1.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../SFML-3.1.0/lib/libsfml-system.a" />
+			<Add library="../SFML-3.1.0/lib/libsfml-graphics.a" />
+			<Add library="../SFML-3.1.0/lib/libsfml-window.a" />
+			<Add directory="../SFML-3.1.0/lib" />
+		</Linker>
+		<Unit filename="Banda.cpp" />
+		<Unit filename="Banda.h" />
+		<Unit filename="Intersectie.cpp" />
+		<Unit filename="Intersectie.h" />
+		<Unit filename="Masina.cpp" />
+		<Unit filename="Masina.h" />
+		<Unit filename="Semafor.cpp" />
+		<Unit filename="Semafor.h" />
+		<Unit filename="Vehicul.cpp" />
+		<Unit filename="Vehicul.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="test_sfml.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
